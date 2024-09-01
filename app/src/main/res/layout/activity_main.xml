@@ -1,0 +1,268 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <!-- Header and location section -->
+    <TextView
+        android:id="@+id/pt_xyz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PT XYZ"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_outline_place"
+        android:layout_below="@id/pt_xyz"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleman"
+        android:layout_below="@id/pt_xyz"
+        android:layout_alignTop="@id/location_icon"
+        android:layout_toRightOf="@id/location_icon"
+        android:layout_marginLeft="8dp"/>
+
+    <!-- Info box section -->
+    <RelativeLayout
+        android:id="@+id/inpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotak"
+        android:layout_below="@id/location_icon"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="37dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/informasi"
+            android:textSize="13sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_last_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pembaruan_terakhir"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal_pembaruan"
+                    android:textSize="13sp"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tv_next_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pembaruan_selanjutnya"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal_selanjutnya"
+                    android:textSize="13sp"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Menu section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inpo"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/search_menu"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/menu"
+                android:layout_margin="15dp"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/material_symbols_manage_search"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/search_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_text"
+                    android:textColor="@color/black"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bookmark_menu"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/menu"
+                android:layout_margin="15dp"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/bookmark_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/vector"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/bookmark_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/bookmark_text"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/statistic_menu"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/menu"
+                android:layout_margin="15dp"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/statistic_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/uis_chart"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/statistic_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/statistic"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_menu"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/menu"
+                android:layout_margin="15dp"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/setting_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/settings"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/setting_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

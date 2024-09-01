@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Relative Layout Homepage</string>
+    <string name="informasi">Informasi perubahan data katalog</string>
+    <string name="pembaruan_terakhir">Pembaruan terakhir : </string>
+    <string name="tanggal_pembaruan"> 16-06-2022 15:00:01</string>
+    <string name="pembaruan_selanjutnya">Pembaruan selanjutnya :</string>
+    <string name="tanggal_selanjutnya">17-06-2022 15:00:01</string>
+    <string name="search_text">Katalog Tender</string>
+    <string name="bookmark_text">Tender Tersimpan</string>
+    <string name="statistic">Laporan Statistik</string>
+    <string name="setting">Pengaturan</string>
+
+
+
+
+
+</resources>
