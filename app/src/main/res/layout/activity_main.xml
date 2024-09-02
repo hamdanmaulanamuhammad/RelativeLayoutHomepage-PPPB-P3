@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="PT XYZ"
-        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginTop="80dp"
         android:layout_marginLeft="36dp"
         android:layout_marginRight="36dp"
         android:textSize="20sp"
@@ -27,7 +28,7 @@
         android:src="@drawable/ic_outline_place"
         android:layout_below="@id/pt_xyz"
         android:layout_marginLeft="36dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         />
 
     <TextView
@@ -56,6 +57,7 @@
             android:layout_height="wrap_content"
             android:text="@string/informasi"
             android:textSize="13sp"
+            android:fontFamily="@font/montserrat_regular"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:textColor="@android:color/black" />
