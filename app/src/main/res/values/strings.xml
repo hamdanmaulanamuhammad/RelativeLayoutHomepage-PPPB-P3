@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Relative Layout Homepage</string>
+    <string name="nama_pt">PT XYZ</string>
+    <string name="alamat">Sleman</string>
     <string name="informasi">Informasi perubahan data katalog</string>
     <string name="pembaruan_terakhir">Pembaruan terakhir : </string>
     <string name="tanggal_pembaruan"> 16-06-2022 15:00:01</string>
