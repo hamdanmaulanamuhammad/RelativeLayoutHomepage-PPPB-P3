@@ -229,7 +229,7 @@
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:background="@drawable/menu"
-            android:layout_toRightOf="@id/statistic_menu"
+            android:layout_toEndOf="@id/statistic_menu"
             android:layout_below="@id/bookmark_menu"
             android:layout_margin="15dp"
             android:elevation="4dp">
